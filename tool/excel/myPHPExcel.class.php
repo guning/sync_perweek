@@ -4,7 +4,7 @@
  * User: guning
  * DateTime: 2017-7-28 11:49
  */
-include "PHPExcel.php";
+include_once "PHPExcel.php";
 class myPHPExcel {
     protected $objPHPExcel;
     public function __construct(){
@@ -27,7 +27,7 @@ class myPHPExcel {
         }
         foreach ($data as $rowNum => $rowVal) {
             foreach ($rowVal as $colNum => $colVal) {
-                $this->objPHPExcel->getActiveSheet()->setCellValue(chr($colNum + 65).$rowNum, $colVal);
+                $this->objPHPExcel->getActiveSheet()->setCellValue(chr($colNum + 65).($rowNum + 1), $colVal);
             }
         }
     }
