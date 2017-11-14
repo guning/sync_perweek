@@ -4,8 +4,7 @@
  * User: guning
  * DateTime: 2017-7-28 11:49
  */
-//include "PHPExcel.php";
-use PHPExcel;
+include "PHPExcel.php";
 class myPHPExcel {
     protected $objPHPExcel;
     public function __construct(){

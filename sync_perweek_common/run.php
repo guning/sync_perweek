@@ -7,12 +7,12 @@
 include_once '../env.php';
 include_once '../loader.php';
 include_once './priceCountry.php';
+include_once '../tool/excel/myPHPExcel.class.php';
 
 use core\Params;
 use core\DBreport;
 use core\DBadn;
 use core\Config;
-use tool\excel\myPHPExcel;
 
 try {
     $params = Params::getParams(['startDay', 'endDay']);
