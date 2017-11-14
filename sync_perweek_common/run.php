@@ -112,7 +112,7 @@ foreach ($tmp as $advertiserId => $v) {
         $map[$advertiserId],
         $sum/$activeDay,
         $activeDay,
-        $changeOffer,
+        $changeOffer/$activeDay,
         abs($changeOffer)
     ];
 }
