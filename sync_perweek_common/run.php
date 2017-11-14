@@ -108,8 +108,8 @@ foreach ($tmp as $advertiserId => $v) {
         $before = $num;
     }
     $adOfferNum[] = [
-        $row['advertiser_id'],
-        $map[$row['advertiser_id']],
+        $advertiserId,
+        $map[$advertiserId],
         $sum/$activeDay,
         $activeDay,
         $changeOffer,
