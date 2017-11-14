@@ -104,7 +104,7 @@ function getPriceCountry($startDate, $endDate)
     $savePrices = $pricefeild;
     $saveCountry = [];
     foreach ($countryData as $key => $value) {
-        $saveCountry[] = [$key, $value, $countryRevenue[$key]/1000];
+        $saveCountry[] = [$key, $value, $countryRevenue[$key]/7000];
     }
     return [$savePrices, $saveCountry];
 }
