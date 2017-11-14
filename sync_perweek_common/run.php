@@ -117,7 +117,7 @@ foreach ($tmp as $advertiserId => $v) {
     ];
 }
 
-$res = getPriceCountry();
+$res = getPriceCountry($params['startDay'], $params['endDay']);
 $map = ["0-0.2", "0.2-0.4", "0.4-0.6", "0.6-0.8",
         "0.8-1", "1-1.2", "1.2-1.4", "1.4-1.6",
         "1.6-1.8", "1.8-2", "2-3", "3-4",

@@ -6,7 +6,7 @@
  */
 use core\DBreport;
 use core\DBadn;
-function getPriceCountry()
+function getPriceCountry($startDate, $endDate)
 {
     echo "get campaign_id \n";
     $sql = "SELECT distinct(campaign_id) from campaign_active2 where date between {$startDate} and {$endDate}";

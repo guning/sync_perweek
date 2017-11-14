@@ -13,7 +13,7 @@ class DBreport
     private static $conn = null;
     private static $instance = null;
 
-    public static function getInstance($config) {
+    public static function getInstance($config = []) {
         if (empty(self::$instance)) {
             if (empty($config) || !is_array($config)) {
                 $configs = Config::getConfig();
